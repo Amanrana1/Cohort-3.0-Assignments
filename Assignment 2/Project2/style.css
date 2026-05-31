@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('/Assignment2Proj-2/Assets/Fonts/Gilroy-Light.otf');
+}
+
+@font-face {
+    font-family: 'gilroybold';
+    src: url('/Assignment2Proj-2/Assets/Fonts/Gilroy-ExtraBold.otf');
+}
+
+main {
+    background-color: #FBF3EC;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    height: 10%;
+    border-bottom: .5px solid rgb(188, 187, 187);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    border-radius: 50px;
+
+}
+
+.nav-left {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left h1 {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    font-family: 'gilroybold';
+    position: relative;
+}
+
+.nav-left h1::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: rgb(210, 137, 0);
+    border-radius: 50%;
+    top: 70%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.nav-links h3 {
+    font-size: 15px;
+    font-family: 'gilroylight';
+    color: rgb(63, 63, 63);
+    letter-spacing: 1px;
+}
+
+.nav-links h3:hover {
+    color: rgb(210, 137, 0);
+    cursor: pointer;
+}
+
+.nav-right {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.nav-right i {
+    font-size: 27px;
+    cursor: pointer;
+}
+
+header {
+    padding: 35px 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left {
+    margin-top: 45px;
+    width: 20%;
+    min-height: 100vh;
+}
+
+.left span {
+
+    font-size: 20px;
+    font-family: 'gilroybold';
+    color: rgb(221, 121, 6);
+    letter-spacing: 1.5px;
+}
+
+.left h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: 'gilroylight';
+    line-height: 1;
+    position: relative;
+}
+
+.left h1::after {
+    content: '';
+    height: 45px;
+    width: 8px;
+    background-color: rgb(210, 119, 0);
+    position: absolute;
+    top: 70%;
+    right: 45px;
+}
+
+.left h1::before {
+    content: '';
+    height: 45px;
+    width: 8px;
+    background-color: rgb(210, 112, 0);
+    position: absolute;
+    top: 70%;
+    right: 30px;
+}
+
+#price {
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'gilroylight';
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid rgb(163, 158, 153);
+    border-radius: 50px;
+}
+
+.description {
+    margin-top: 30px;
+    padding: 0px 10px;
+}
+
+.description h3 {
+    font-size: 20px;
+    font-family: 'gilroylight';
+    color: rgb(38, 38, 38);
+    letter-spacing: 1px;
+}
+
+.description p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(89, 89, 89);
+    margin-top: 15px;
+    width: 80%;
+    line-height: 1.7;
+}
+
+.description h4 {
+    font-family: 'gilroylight';
+    font-size: 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 1px solid rgb(163, 158, 153);
+    border-radius: 50px;
+
+}
+
+.description h4 i {
+    color: rgb(210, 137, 0);
+    font-size: 30px;
+    align-items: center;
+}
+
+.meterial {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 15px 10px;
+    border-bottom: 1px solid rgb(163, 158, 153);
+    border-radius: 50px;
+
+}
+
+.meterial h3 {
+    font-family: 'gilroylight';
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+
+.shipping {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    padding: 0px 10px 15px 10px;
+    border-bottom: 1px solid rgb(163, 158, 153);
+    border-radius: 50px;
+
+}
+
+.shipping h3 {
+    font-family: 'gilroylight';
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+
+.middle {
+    min-height: 120vh;
+    width: 60%;
+
+}
+
+.middle>img {
+    object-fit: contain;
+    position: absolute;
+    right: 370px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+
+.right {
+    margin-top: 45px;
+    width: 24%;
+    min-height: 100vh;
+    
+}
+
+.right>h2 {
+    font-family: 'gilroylight';
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.size {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.size h3 {
+    font-family: 'gilroylight';
+    font-size: 20px;
+    padding: 15px 15px;
+    background-color: #F3EBE4;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(217, 167, 133, 0.5);
+
+}
+
+.size h3:hover {
+    background-color: #E95D02;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(233, 93, 2, 0.5);
+    transition: all 0.3s ease;
+}
+
+.size h3:nth-child(1),
+.size h3:nth-child(2),
+.size h3:nth-child(3) {
+    padding: 15px 22px
+}
+
+.right>h3 {
+
+    font-family: 'gilroylight';
+    font-size: 15px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 1px solid rgb(224, 217, 210);
+    border-radius: 50px;
+}
+
+.right>h3:hover {
+    color: rgb(132, 130, 127);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right>h3 i {
+    color: rgb(210, 137, 0);
+    font-size: 30px;
+    align-items: center;
+}
+
+.color {
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+   
+}
+
+.color h3 {
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.color-options {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 10px;
+    height: 100%;
+    
+}
+.color-option{
+    width: 49%;
+    height: 49%;
+    display: inline-block;
+}
+.color-option h3{
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'gilroylight';
+    margin-top: 10px;
+}
+.color-option-inner-image {
+    width:90%;
+    height:80%;
+    border-radius: 30px;
+    overflow:hidden;
+}
+.color-option-inner-image:hover{
+    box-shadow: 0px 0px 35px rgba(233, 93, 2, 0.5);
+    border: 2px solid #E95D02;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.color-option-inner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wishlist{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+    border: 1px solid rgb(182, 181, 181);
+    padding: 10px 0px;
+    border-radius: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wishlist:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(233, 93, 2, 0.5);
+    transition: all 0.3s ease;
+}
+.wishlist i{
+    font-size: 25px;
+    font-weight: 300;
+}
+.wishlist h3{
+    font-family: 'gilroylight';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.Bag{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+   background-color: #E95D02;
+    padding: 15px 0px;
+    border-radius: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Bag:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(233, 93, 2, 0.5);
+    transition: all 0.3s ease;
+}
+.Bag i{
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+}
+.Bag h3{
+    font-family: 'gilroylight';
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.features{
+    width: 100%;
+    height: 60%;
+}
+.features img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover ;
+}
