@@ -12,17 +12,17 @@ body {
 
 @font-face {
     font-family: 'segoeu';
-    src: url(Assets/fonts/segoeuithibd.ttf);
+    src: url(/segoeuithibd.ttf);
 }
 
 @font-face {
     font-family: 'segoeuthin';
-    src: url(Assets/fonts/segoeuithis.ttf);
+    src: url(/segoeuithis.ttf);
 }
 
 @font-face {
     font-family: 'segoeuitalic';
-    src: url(Assets/fonts/segoeuithisi.ttf);
+    src: url(/segoeuithisi.ttf);
 }
 
 main {
